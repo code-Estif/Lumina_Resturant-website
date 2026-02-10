@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Lumina Hospitality</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container">
+            <nav role="navigation">
+                <a href="index.html" class="logo">LUMINA</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Culinary Selection</h2>
+                    <p>Experience a symphony of flavors curated by our award-winning chefs. We use only the finest
+                        seasonal ingredients.</p>
+                </div>
+
+                <nav class="menu-filters" aria-label="Menu category filters">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="food" aria-pressed="false">Food</button>
+                    <button class="filter-btn" data-filter="drinks" aria-pressed="false">Drinks</button>
+                </nav>
+
+                <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+
+                <div id="no-results" role="status">
+                    <p>No items found in this category.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Lumina Hospitality Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

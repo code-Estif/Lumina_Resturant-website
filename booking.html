@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | Lumina Hospitality</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container">
+            <nav role="navigation">
+                <a href="index.html" class="logo">LUMINA</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="booking-section">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <h2>Reservation</h2>
+                    <p>Secure your spot at Lumina. We recommend booking at least 24 hours in advance.</p>
+                </div>
+
+                <div class="booking-form-container">
+                    <form id="booking-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <span class="form-error" id="name-error">Min 3 characters.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required>
+                            <span class="form-error" id="phone-error">7-15 digits.</span>
+                        </div>
+
+                        <div class="form-row-split">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected>Select number of guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5+ People</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                            Confirm Reservation
+                        </button>
+
+                        <div id="booking-success" class="booking-success" role="alert">
+                            <i class="fa-solid fa-check"></i> Reservation secured! ID: <span id="booking-token"
+                                class="booking-token"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Lumina Hospitality Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="booking.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
