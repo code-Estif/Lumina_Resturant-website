@@ -740,10 +740,10 @@ section {
 }
 
 #submit-btn:hover:not(:disabled) {
-    background: #fff;
+    background: #e0b35e;
     color: #000;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.15);
 }
 
 #submit-btn:disabled {

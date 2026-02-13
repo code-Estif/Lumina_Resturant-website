@@ -5,7 +5,7 @@ const menuData = [
         category: "food",
         price: "$45",
         desc: "Prime aged ribeye served with black truffle butter and roasted heirloom carrots.",
-        img: "./Truffle-Ribeye.jpg",
+        img: "Truffle Ribeye.jpg",
         alt: "Gourmet ribeye steak with truffle butter"
     },
     {
@@ -14,7 +14,7 @@ const menuData = [
         category: "food",
         price: "$38",
         desc: "Wild-caught salmon with a sweet miso glaze, bok choy, and ginger-infused rice.",
-        img: "Images/Miso-Glazed-Salmon.jpg",
+        img: "Miso Glazed Salmon.jpg",
         alt: "Glazed salmon fillet on a bed of rice"
     },
     {
@@ -23,7 +23,7 @@ const menuData = [
         category: "food",
         price: "$32",
         desc: "Creamy carnaroli rice with premium saffron, parmesan crisps, and microgreens.",
-        img: "Images/Saffron-Risotto.jpg",
+        img: "Saffron Risotto.jpg",
         alt: "Vibrant yellow saffron risotto"
     },
     {
@@ -32,7 +32,7 @@ const menuData = [
         category: "drinks",
         price: "$18",
         desc: "Gold-dusted espresso martini with a hint of vanilla and roasted cocoa beans.",
-        img: "Images/Midnight-Martini.jpg",
+        img: "Midnight Martini.jpg",
         alt: "Dark espresso martini in a tall glass"
     },
     {
@@ -41,7 +41,7 @@ const menuData = [
         category: "food",
         price: "$28",
         desc: "A selection of curated local cheeses, honeycomb, and house-made fig jam.",
-        img: "Images/Artisan-Cheeseboard.jpg",
+        img: "Artisan Cheeseboard.jpg",
         alt: "Gourmet cheese board with crackers"
     },
     {
@@ -50,7 +50,7 @@ const menuData = [
         category: "drinks",
         price: "$22",
         desc: "Smoked bourbon, maple reduction, and aromatic bitters over a sphere of hand-carved ice.",
-        img: "Images/Vintage-Old-Fashion.jpg",
+        img: "Vintage Old Fashioned.jpg",
         alt: "Classic old fashioned cocktail"
     }
 ];
